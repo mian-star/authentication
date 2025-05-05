@@ -26,7 +26,7 @@ const LoginPage = () => {
     }
     
     try {
-      const userExist = await fetch('http://localhost:3000/api/userexist',{
+      const userExist = await fetch('https://authentication-dun-gamma.vercel.app/api/userexist',{
         method : "POST",
         body :JSON.stringify({email})
       })
@@ -36,7 +36,7 @@ const LoginPage = () => {
         return;
       }
 
-      const request = await fetch('http://localhost:3000/api/rigester',{
+      const request = await fetch('https://authentication-dun-gamma.vercel.app/api/rigester',{
         method : 'POST',
         body : JSON.stringify({name,email,password})
       })
