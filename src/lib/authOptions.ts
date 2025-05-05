@@ -1,19 +1,22 @@
 import mongoose from "mongoose";
-import {connectionStr} from '../../../../lib/db'
-import {User} from '../../../../lib/modal/scme'
+import {connectionStr} from '../lib/db'
+import {User} from '../lib/modal/scme'
 import bcrypt from 'bcryptjs'
-import NextAuth from "next-auth/next";
+import { type NextAuthOptions } from "next-auth";
 import CredentialsProvider from 'next-auth/providers/credentials'
 
 
-export const authOptions = {
+export const authOptions: NextAuthOptions = {
     providers : [
         CredentialsProvider({
             name: "credentials",
             credentials: {},
 
             async authorize(credentials){
-                const {email, password} = credentials;
+                const { email, password } = credentials as {
+                    email: string;
+                    password: string;
+                  };
                 
                 try {
                     await mongoose.connect(connectionStr);
@@ -43,7 +46,3 @@ export const authOptions = {
         signIn: "/",
     },
 };
-
-const handler = NextAuth(authOptions);
-
-export {handler as GET, handler as POST};
