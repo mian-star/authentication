@@ -1,0 +1,133 @@
+/* .navbar{
+    width: 80%;
+    height: 12vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.logo {
+    font-size: 35px;
+    font-weight: bold
+}
+.list {
+    list-style: none;
+    display: flex;
+    margin: 0px 20px;
+}
+.list li{
+    margin: 0px 20px;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+.list button{
+   padding: 5px 10px;
+   background-color: rgb(71, 216, 71);
+   border: 1px solid black;
+   border-radius: 10px;
+   font-weight: bold;
+}
+.hello{
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+}
+.about {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 3%;
+}
+.text1{
+    margin: 10% 0px;
+    width: 60%;
+}
+.text1 p{
+    color: black;
+}
+.img{
+    width: 40%;
+}
+ */
+
+
+ .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ebebeb;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 10%;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+}
+
+.feature {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.feature h2 {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #888;
+}
+
+.footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer p {
+    color: #929292;
+}
+  
+.button {
+    margin-top: 3%;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff7e5f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #feb47b;
+  }
